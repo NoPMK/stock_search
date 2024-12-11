@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex min-w-full justify-center min-h-screen p-8 bg-slate-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex min-w-full justify-center min-h-screen lg:p-8 bg-slate-900 font-[family-name:var(--font-geist-sans)]">
       {" "}
       <main className="flex flex-col w-full justify-center items-center">
         <Searchbar onSearch={handleSearch} />
