@@ -17,7 +17,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="w-full max-w-full h-16">
+    <nav className="w-full max-w-full h-22 fixed bg-slate-900">
       <div className="flex justify-between p-4">
         <span className="p-4">Logo</span>
         <div className="flex gap-2">
