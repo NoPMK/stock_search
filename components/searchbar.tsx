@@ -10,7 +10,7 @@ export default function Searchbar({ onSearch }: SearchBarProps) {
   };
 
   return (
-    <form className="w-full max-w-[500px] relative">
+    <form className="w-full max-w-[500px] relative mt-20">
       <div className="relative">
         <input
           type="search"
