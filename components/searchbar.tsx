@@ -1,5 +1,3 @@
-import { AiOutlineSearch } from "react-icons/ai";
-
 interface SearchBarProps {
   onSearch: (query: string) => void;
 }
@@ -18,12 +16,6 @@ export default function Searchbar({ onSearch }: SearchBarProps) {
           className="w-full p-4 pr-12 rounded-full bg-slate-800"
           onChange={(e) => handleSearch(e)}
         />
-        <button
-          className="absolute right-1 top-1/2 -translate-y-1/2 p-4 bg-slate-900 rounded-full
-        hover:bg-slate-700"
-        >
-          <AiOutlineSearch />
-        </button>
       </div>
     </form>
   );
