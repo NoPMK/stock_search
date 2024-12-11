@@ -26,10 +26,20 @@ export default function SearchList({ stocks }: StockListProps) {
                 onClick={() => handleClick(stock.symbol)}
                 className="p-4 bg-slate-800 rounded-lg shadow hover:bg-slate-700 cursor-pointer"
               >
-                <h3 className="text-lg font-bold text-white">{stock.name}</h3>
-                <p className="text-slate-400">{stock.symbol}</p>
-                <p className="text-slate-400">{stock.type}</p>
-                <p className="text-slate-400">{stock.region}</p>
+                <div className="flex gap-4 justify-between h-full">
+                  <div>
+                    <h3 className="text-lg font-bold text-white">
+                      {stock.name}
+                    </h3>
+                    <p className="text-slate-400">{stock.symbol}</p>
+                  </div>
+                  <div className="flex justify-end items-end h-full w-full">
+                    <span className="text-2xl">
+                      Value:{" "}
+                      <span className="text-green-600">{stock.value}</span>
+                    </span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
