@@ -4,4 +4,5 @@ export interface Stock {
   type: string;
   region: string;
   currency: string;
+  value: number;
 }
